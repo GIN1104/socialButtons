@@ -9,6 +9,7 @@
     height: auto;
 }
 .phone{
+    margin-top: 5px;
     width: 30px;
     height: auto;
     color: black;
@@ -17,4 +18,14 @@
     width: 40px;
     height: auto;
     color: rgb(64, 140, 232)
+}
+.viber{
+    width: 40px;
+    height: auto;
+    color: rgb(71, 23, 147)
+}
+.facebook{
+    width: 40px;
+    height: auto;
+    color: rgb(33, 127, 228)
 }
