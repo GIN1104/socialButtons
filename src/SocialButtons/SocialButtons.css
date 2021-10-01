@@ -1,0 +1,20 @@
+.social-wrapper{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.whatsapp{
+    color: green;
+    width: 40px;
+    height: auto;
+}
+.phone{
+    width: 30px;
+    height: auto;
+    color: black;
+}
+.telegram{
+    width: 40px;
+    height: auto;
+    color: rgb(64, 140, 232)
+}
