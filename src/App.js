@@ -1,11 +1,11 @@
 import './App.css';
-import SocialButtons from './SocialButtons/SocialButtons';
+import SocialMedia from './SocialMedia/SocialMedia';
 
 function App() {
   return (
     <div className="App">
       <div>Social Media</div>
-      <SocialButtons  />
+      <SocialMedia  />
     </div>
   );
 }
