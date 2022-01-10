@@ -23,6 +23,20 @@ export default function SocialButtons() {
             <a href="viber://add?number=972545779239" className="social-button viber-but" ><FaViber className='viber-mb' /></a>
 
             
+
+
+            {/* <a href='https://wa.me/972524760015' rel="noreferrer" target='_blank'><FaWhatsapp className='whatsapp' /></a> */}
+
+            {/* <a href='tel:+972524760015'><FaPhone className='phone' /></a>
+
+            <a href="https://telegram.me/EvgenyStarchenko" rel="noreferrer" target='_blank'><FaTelegramPlane className='telegram' /></a>
+
+            <a href="https://www.messenger.com/t/starchenkogin@mail.ru" rel="noreferrer" target='_blank'><img src={FacebookMessenger} className='facebook' alt='facebook messenger icon' /></a>
+
+            <a href="viber://chat?number=+972524760015" rel="noreferrer" target='_blank'><FaViber className='viber' /></a>
+
+            <a href="viber://add?number=97252476  b0015"  ><FaViber className='viber-mb' /></a> */}
+
         </div>
     )
 }

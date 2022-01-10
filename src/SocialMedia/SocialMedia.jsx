@@ -32,35 +32,22 @@ export default function SocialMedia() {
                 size="2x"
          ></SocialButton>
 
-{   isMobile ?   < SocialButton 
-                href={`viber://chat?number=+${data.phone}`}
-                Icon={faViber} 
-                classNameButton="social-button viber"
-                classNameIcon='viber' 
-        ></SocialButton> 
-       :
+{   isMobile ? 
          < SocialButton 
                 href={`viber://add?number=${data.phone}`}
                 Icon={faViber} 
                 classNameButton="social-button viber-but"
                 classNameIcon='viber-mb' 
         ></SocialButton> 
-        
+        :
+          < SocialButton 
+                href={`viber://chat?number=+${data.phone}`}
+                Icon={faViber} 
+                classNameButton="social-button viber-but"
+                classNameIcon='viber-mb' 
+                title= "Do you have PC virsion of Viber?"
+        ></SocialButton> 
         }
-
-
-            {/* <a href='https://wa.me/972524760015' rel="noreferrer" target='_blank'><FaWhatsapp className='whatsapp' /></a> */}
-
-            {/* <a href='tel:+972524760015'><FaPhone className='phone' /></a>
-
-            <a href="https://telegram.me/EvgenyStarchenko" rel="noreferrer" target='_blank'><FaTelegramPlane className='telegram' /></a>
-
-            <a href="https://www.messenger.com/t/starchenkogin@mail.ru" rel="noreferrer" target='_blank'><img src={FacebookMessenger} className='facebook' alt='facebook messenger icon' /></a>
-
-            <a href="viber://chat?number=+972524760015" rel="noreferrer" target='_blank'><FaViber className='viber' /></a>
-
-            <a href="viber://add?number=97252476  b0015"  ><FaViber className='viber-mb' /></a> */}
-
             
         </div>
     )
