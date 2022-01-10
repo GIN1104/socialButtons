@@ -8,11 +8,11 @@ function SocialButton({href, Icon, classNameButton, classNameIcon, size = "3x", 
     return (
         <a href={href} className={classNameButton}   rel="noreferrer" target='_blank'>
             <FontAwesomeIcon 
-            icon={ Icon } 
-            size={size}
-            style={{style}}
-            spin={false}
-            className={classNameIcon}/>
+                icon={ Icon } 
+                size={size}
+                style={{style}}
+                spin={false}
+                className={classNameIcon}/>
         </a>
     )
 }

@@ -1,11 +1,10 @@
 import React from 'react'
 import './SocialMedia.css'
 import SocialButton from '../SocialButton/SocialButton.jsx'
-// import { FaWhatsapp, FaPhone, FaTelegramPlane, FaViber} from 'react-icons/fa'
- import {  faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import {  faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import {faWhatsapp, faTelegramPlane, faViber} from '@fortawesome/fontawesome-free-brands';
-// import  FacebookMessenger  from './facebookmessenger.svg'
-import { data } from "./data"
+import { data } from "./data";
+import { isMobile } from 'react-device-detect';
 
 
 export default function SocialMedia() {
@@ -33,12 +32,21 @@ export default function SocialMedia() {
                 size="2x"
          ></SocialButton>
 
-        < SocialButton 
+{   isMobile ?   < SocialButton 
+                href={`viber://chat?number=+${data.phone}`}
+                Icon={faViber} 
+                classNameButton="social-button viber"
+                classNameIcon='viber' 
+        ></SocialButton> 
+       :
+         < SocialButton 
                 href={`viber://add?number=${data.phone}`}
                 Icon={faViber} 
                 classNameButton="social-button viber-but"
                 classNameIcon='viber-mb' 
-        ></SocialButton>
+        ></SocialButton> 
+        
+        }
 
 
             {/* <a href='https://wa.me/972524760015' rel="noreferrer" target='_blank'><FaWhatsapp className='whatsapp' /></a> */}
